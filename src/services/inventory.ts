@@ -26,10 +26,24 @@ const initialProducts: Product[] = [
   },
   {
     id: '4',
-    name: 'Headphones',
-    price: 99.99,
-    stock: 100,
-    image: '/src/images/headphones.svg'
+    name: 'Charger',
+    price: 49,
+    stock: 50,
+    image: '/src/images/charger.svg'
+  },
+  {
+    id: '5',
+    name: 'Desktop',
+    price: 899,
+    stock: 30,
+    image: '/src/images/desktop.svg'
+  },
+  {
+    id: '6',
+    name: 'Printer',
+    price: 699,
+    stock: 40,
+    image: '/src/images/printer.svg'
   },
 ];
 
