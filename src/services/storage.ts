@@ -1,4 +1,4 @@
-import { Product, Order } from '../types'; 
+import { Product, Order } from '../types';
 
 const STORAGE_KEYS = {
   ORDERS: 'order_inventory_orders',
@@ -22,6 +22,10 @@ export const storage = {
 
   setProducts: (products: Product[]): void => {
     localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(products));
+  },
+
+  clearOrders: (): void => {
+    localStorage.setItem(STORAGE_KEYS.ORDERS, JSON.stringify([]));
   },
 
   clearAll: (): void => {

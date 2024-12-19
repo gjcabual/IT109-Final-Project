@@ -7,17 +7,20 @@ A modern, React-based order and inventory management system with simulated micro
 ## 🚀 Features
 
 ### Inventory Management
+
 - Real-time product stock tracking
 - Automatic stock updates on order placement
 - Product catalog with pricing and availability
 
 ### Order Management
+
 - Shopping cart functionality
 - Order creation and processing
 - Order history tracking
 - Real-time inventory validation
 
 ### User Interface
+
 - Clean, modern design with Tailwind CSS
 - Responsive layout for all devices
 - Real-time updates and notifications
@@ -28,16 +31,19 @@ A modern, React-based order and inventory management system with simulated micro
 The application follows a service-oriented architecture with clear separation of concerns:
 
 ### Services
+
 - `inventoryService`: Manages product inventory and stock levels
 - `orderService`: Handles order processing and management
 - `storageService`: Manages local storage operations
 
 ### State Management
+
 - Global state management using Zustand
 - Centralized store for products, orders, and cart
 - Efficient state updates and subscriptions
 
 ### Components
+
 ```
 src/
 ├── components/
@@ -70,17 +76,20 @@ src/
 ## 🚦 Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd order-inventory-system
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -93,21 +102,27 @@ src/
 ## 📝 Code Organization
 
 ### Components
+
 Each component is organized in its own directory with:
+
 - Main component file
 - Associated styles (if needed)
 - Type definitions
 - Unit tests
 
 ### Services
+
 Services are organized by domain:
+
 - Clear interfaces
 - Single responsibility
 - Error handling
 - Type safety
 
 ### State Management
+
 The store is organized with:
+
 - Clear state interface
 - Action creators
 - Type-safe selectors
@@ -116,11 +131,13 @@ The store is organized with:
 ## 🧪 Testing
 
 Run the test suite:
+
 ```bash
 npm run test
 ```
 
 Tests cover:
+
 - Component rendering
 - Service functionality
 - State management
@@ -129,6 +146,7 @@ Tests cover:
 ## 🔒 Type Safety
 
 The project uses TypeScript for full type safety:
+
 - Strict type checking
 - Interface definitions
 - Type inference
@@ -137,6 +155,7 @@ The project uses TypeScript for full type safety:
 ## 🎨 Styling
 
 Styling is handled through:
+
 - Tailwind CSS for utility classes
 - Custom CSS modules where needed
 - Responsive design patterns
@@ -145,6 +164,7 @@ Styling is handled through:
 ## 🔧 Configuration
 
 Key configuration files:
+
 - `vite.config.ts`: Build and development settings
 - `tsconfig.json`: TypeScript configuration
 - `tailwind.config.js`: Tailwind CSS settings
@@ -155,24 +175,28 @@ Key configuration files:
 This project follows several key best practices:
 
 ### Code Organization
+
 - Small, focused files
 - Clear separation of concerns
 - Modular architecture
 - Reusable components
 
 ### State Management
+
 - Centralized store
 - Immutable state updates
 - Type-safe actions
 - Efficient selectors
 
 ### Performance
+
 - Code splitting
 - Lazy loading
 - Memoization
 - Efficient re-renders
 
 ### Error Handling
+
 - Consistent error boundaries
 - Type-safe error handling
 - User-friendly error messages

@@ -46,4 +46,8 @@ export const orderService = {
   getAllOrders: () => {
     return storage.getOrders();
   },
+
+  clearOrders: () => {
+    storage.clearOrders();
+  },
 };
