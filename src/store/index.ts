@@ -190,7 +190,7 @@ export const useStore = create<StoreState>((set, get) => ({
 
     try {
       orderService.createOrder(cart);
-      set(state => ({
+      set(() => ({
         orders: orderService.getAllOrders(),
         cart: [],
         products: inventoryService.getAllProducts(),

@@ -44,7 +44,7 @@ export const OrderList = () => {
             </div>
             
             <div className="space-y-2">
-              {order.items.map((item) => {
+              {order.items.map((item: { productId: React.Key | null | undefined; quantity: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => {
                 const product = products.find(p => p.id === item.productId);
                 return (
                   <div key={item.productId} className="flex items-center">
